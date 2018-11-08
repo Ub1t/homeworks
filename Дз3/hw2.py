@@ -1,10 +1,12 @@
-from scipy import arange
 def f(x):
     if 3 < x < 12:
         return x - 10
     else:
         return x + 10
 def fr():
-    for i in arange(-5.0, 5.0, 0.5):
-        print("f(", i, ") = ", f(i), sep='')
+    loop = True
+    ran = -5
+    while -5 <= ran < 5:
+        print("f(", ran, ") = ", f(ran), sep='')
+        ran += 0.5
 fr()
