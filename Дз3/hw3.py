@@ -7,8 +7,8 @@ def s(a, b):
 def d(a, b):
     while True:
         if b == 0:
-            print("Введите второе число заново!")
-            b = int(input("Введите второе число >>>"))
+            print("Введите второе число заново! Деление на ноль не возможно")
+            b = float(input("Введите второе число >>>"))
             continue
         else:
             print(a, "/", b, "=", a / b)
@@ -25,8 +25,8 @@ while True:
         print("Выход...")
         break
     elif v == "1" or v == "2" or v == "3" or v == "4":
-        z = int(input("Введите первое число >>>"))
-        zz = int(input("Введите второе число >>>"))
+        z = float(input("Введите первое число >>>"))
+        zz = float(input("Введите второе число >>>"))
         if v == "1":
             sl(z, zz)
         elif v == "2":
