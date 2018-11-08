@@ -1,8 +1,8 @@
-def name():
-    s = input("Введите ваше имя >>> ")
+def name(x):
     myname = "Владислав"
-    if len(s) >= 1:
+    if len(x) >= 1:
         print("Здравствуйте {}!".format(s))
     else:
         print("Здравствуйте {}!".format(myname))
-name()
+s = input("Введите ваше имя >>> ")
+name(s)
